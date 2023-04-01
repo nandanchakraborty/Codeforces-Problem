@@ -1,0 +1,25 @@
+//problem_name__perfect_number.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,i=1,res=0;
+    cout << "Enter a number: ";
+    cin >> n;
+    while(i<n) {
+        if(n%i==0)
+            res=res+i;
+        i++;
+    }
+
+    if(res==n)
+        cout << i << " is a perfect number\n";
+    else
+        cout << i << " is not a perfect number\n";
+
+
+    return 0;
+}
+
